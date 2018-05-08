@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BITHockeyManagerDelegate 
         DDLog.add(fileLogger)
         
         
-        
+        print("One two three four five")
         
         BITHockeyManager.shared().configure(withIdentifier: "b1965e71958a4af2a52efba9b39e3c6b",delegate:self)
         BITHockeyManager.shared().start()
@@ -42,6 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BITHockeyManagerDelegate 
             DDLog.add(DDTTYLogger.sharedInstance())
             DDLog.add(DDASLLogger.sharedInstance())
         }
+        
         
         
         return true
